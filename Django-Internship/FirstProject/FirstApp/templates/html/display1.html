@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display Information</title>
+</head>
+<body>
+	<table class=table table-borderless col-md-6">
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+	<div class="container mt-4">
+		<div class="table="col-md">
+			<table class="table table-bordered table-light">
+		    <thead class="bg-dark text-center text-light">
+		    	<th>Name</th>
+		    	<th>Email id</th>
+		    	<th>Actions</th>
+		    </thead>
+		    <tbody>
+                {% for row in data %}
+                <tr>
+                	<td>{{row.name}}</td>
+                	<td>{{row.email}}</td>
+                	<td><a href="{% url 'sv' row.id %}" class="btn btn-outline-primary">view</a><a href="{% url 'sup' row.id %}" class="btn btn-outline-success">Update</a><a href="{% url 'sd' row.id %}"class="btn btn-outline-danger">Delete</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

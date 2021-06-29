@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Info</title>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container-fluid bg-warning">
+		<h2 class="text-primary">Hi {{firstname}}</h2>
+	</div>
+	<div>
+		<h2 class="text-success">Here is your registration info</h2>
+	</div>
+	<table border="1">
+		<tr>
+			<thead>
+				<th>firstname<br></th>
+				<th>lastname</th>
+				<th>address</th>
+				<th>email</th>
+				<th>phnno</th>
+				<th>gender</th>
+				<th>languages known</th>
+		</tr>
+		<tr>
+			<tbody>
+				<td>{{firstname}}</td>
+				<td>{{lastname}}</td>
+				<td>{{address}}</td>
+				<td>{{email}}</td>
+				<td>{{phnno}}</td>
+				<td>{{gender}}</td>
+				<td>{{Languages}}</td>
+			</tbody>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display Information</title>
+</head>
+<body>
+	<h2>Hi {{firstname}}</h2>
+	<table border="1">
+		<tr>
+			<thead>
+				<th>firstname<br></th>
+				<th>lastname</th>
+				<th>gender</th>
+				<th>email</th>
+				<th>phnno</th>
+				<th>address</th>
+				<th>Languages known</th>
+		</tr>
+		<tr>
+			<tbody>
+				<td>{{firstname}}</td>
+				<td>{{lastname}}</td>
+				<td>{{gender}}</td>
+				<td>{{email}}</td>
+				<td>{{phnno}}</td>
+				<td>{{address}}</td>
+				<td>{{Languages}}</td>
+			</tbody>
+		</tr>
+	</table>
+</body>
+</html>
